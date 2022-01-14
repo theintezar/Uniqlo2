@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,100;1,300&display=swap" rel="stylesheet">
+</head>
+<style>
+
+    .account{
+        border:1px solid rgb(219, 219, 219);
+        width:730px;
+        height:800px;
+        margin-left:50px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        
+        
+    }
+    
+    
+    .account>.form>div>div>p>a{
+        color:cornflowerblue;
+    }
+    .head>img{
+        margin-left: 25px;
+        height:53px;
+        width:119px;
+        margin-top:30px;
+    
+    }
+    .account>p>a{
+        display:flex;
+    }
+    div>h1{
+        font-family: 'Poppins', sans-serif;
+
+    }
+    
+    
+    
+
+    
+</style>
+<body>
+    <div style="width: 100%; height: 40px;  background-color: rgb(236, 231, 231);"></div>
+    <div class="head">
+        <img style="width:90px;height:40px;padding-left:25px;"src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAA1CAMAAABMd4TfAAAAbFBMVEX/AAD/////1tb/oaH/7e3/t7f/yMj/kZH/9/f/k5P/qqr/Dw//ODj/TU3/XFz/nZ3/5+f/dXX/VVX/pqb/29v/4uL/JSX/0ND/vr7/SEj/Ly//hIT/RET/Pj7/r6//ICD/bm7/ior/fn7/ZGQpso1mAAAChklEQVRYhe2Ya5uyIBCGZ4iMsrOUdljL9v//xwU5CEZU7lrve109X5CRnhttHFCALkJXnRy66cP9cP91bsWJEj840bWJevEAd8YJP4r2wkki+xPd5oSPZJuKg0uIm1mjgROdO4BFjCsHzkQ7RqSyn4j+SrQMcVJzxcE4xJ0E/AG+f8PlLe4oxF0VQynmc3cqKlWsnuXi/AGu1tLnhvUoN38TF49v4ibv4AoSpvT13JwgZu/grsQ1v+E+E6D1gN65uzZ33D/3C9UPOeLGcuEud0a1xDhG6UaHN9TT9DZXThjLQ244ipvd5XpWyHSY+eEYd2UDp4ab3uOuw1w/GuXCQvdn0HBhiPH1aJoNXJm/eOFFB9sYF+Y5QzrUYzR3eud6n1OYK92bIyG3BdP2wu1ZH67W9f8bOufpnPWRz0ankiIj3wHuxvXKQ4AHn991gHvU58prrleaBqFgh3qllVqfqo3diWBTos0NYXW1tuGn67NzK/hB7pQZtFRZh7OZsuKaIrOOc8PrkZYOSsasxR3q8fUGnpro49zg+mskcicTzR7VO4QrcWpoJ1d0417tN+5ztyJ0sKa2gPfO/UqSXLnKBFu/jNvoIpLOpNUruU2CvZbrplUH7uIGVz7U0xiXuUXF6eziXJmYYr7yvYRfcUU1YXuA0rHQpvY1t3DTSnKJPpHEuSBeSnBZyIJYaS4tleNF5gyyQq4AGw8LI9eIpS7XVYxrd6TKOmkGlGpSteY+N3GNuHfTH+XCXA+u2o4T+VVFXdHZx0JBGnHnu0pOPO1jXDiNc7I0057YD0Hqe865IPliC79TmFvbY7Oo/L1uc/9km9yBC4W/v3kZN53u9+Ef9cvtVf8v9wdhACZXdX0tdgAAAABJRU5ErkJggg==">
+    </div>
+    <hr>
+    <div>
+        <h1 style="margin-left:50px;padding-top: 50px;padding-bottom: 10px;">CREATE AN ACCOUNT</h1>
+    </div>
+    
+    <div class="account">
+        <div style="display: flex;flex-direction: row;">
+            <div>
+                <p style="margin-left:20px;width:84%;height:40px;">You will receive the confirmation mail to your email address associated with account. Please make sure to check your incoming email from us.</p>
+    
+            </div>
+            <div>
+                <p style="padding-right:20px">Required<a style="color:cadetblue">*</a></p>
+    
+            </div>
+
+        </div>
+         <form class="form" id="myform" onsubmit="signup(event)">
+            <label style="padding-left:20px;color:black"><b>EMAIL ADDRESS</b><a style="color:cadetblue">*</a></label>
+            <input id ="email" style="margin-left:80px;height:40px;width:480px;background-color:rgb(231, 230, 230);border:none;" type="text" value="" placeholder="xxx.uniqlo.com" ><br><br>
+            <label style="padding-left:20px;color:black"><b>PASSWORD</b> <a style="color:cadetblue">*</a></label>
+            <input id="password" style = "margin-left:106px;height:40px;width:480px;margin-right: 20px;background-color:rgb(231, 230, 230);border:none;" type="text" value="" placeholder="">
+            <p style="margin-left:220px;padding-right:20px;">Password must be at least 8 characters, and contain both numbers and alphabet letters.</p>
+            <label style="padding-left:20px;color:black"><b>PINCODE</b><a style="color:cadetblue">*</a></label>
+            <input style="margin-left:125px;height:40px;width:480px;margin-right: 20px;background-color:rgb(231, 230, 230);border:none;"placeholder="Please enter pincode"><br><br>
+            <label style="padding-left:20px;color:black"><b>BIRTHDAY</b></label>
+            <input style="margin-left:125px;height:40px;width:290px;margin-right: 20px;background-color:rgb(231, 230, 230);border:none;" type="date"placeholder="dd-mm-yyyy">
+            <p style="margin-left:220px;padding-right:20px;">Unable to edit birthday after your register</p>
+            <label style="padding-left:20px;color:black"><b>GENDER</b><label>
+            <input style="margin-left:145px;padding-right:20px;" type="radio" placeholder="">
+            <label>Male</label>
+            <input style="margin-left:5px;padding-right:20px;" type="radio" placeholder="">
+            <label>Female</label>
+            <input style="margin-left:5px;padding-right:20px;" type="radio" placeholder="">
+            <label>Unselect</label>
+            <h3 style="padding-left: 20px;font-size:15px">SUBSCRIBE ME TO UNIQLO’S MAILING LIST</h3>
+            <div style="border:1px solid rgb(151, 143, 143);width:700px;margin-left: 20px;height:25px;">
+            <input style="margin-left:5px;padding-top:15px;" type="checkbox">
+            <label style="color:black;margin-top:10px;background-color:white;border:none;">UNIQLO E-newsletter</label>
+            
+            </div>
+            <hr>
+        </form>
+        <div>
+            <h3 style="padding-left:20px;font-size: 15px;">MEMBERSHIP AGREEMENT <a style="color:cadetblue">*</a></h3>
+            <P style="padding-left:20px;color:gray">By creating an account, you agree to UNIQLO’s privacy policy and terms of use.</P>
+            <div style="border:1px solid gray;width:700px;margin-left: 20px;height:25px;">
+                <input style="margin-left:5px;padding-top:15px;" type="checkbox">
+                <label style="color:black;margin-top:10px;">I agree to the UNIQLO’s TERMS OF USE and PRIVACY POLICY</label>
+            </div>
+            <div style="display:flex;">
+                <a style="color:rgb(12, 10, 10);margin:10px;margin-left: 19px;" href="#"><b>TERMS OF USE</b></a>
+                <a style="color:rgb(10, 10, 10);margin:10px;" href="#"><b>PRIVACY POLICY</b></a>
+            </div>
+                <button id ="btns" onclick="accountcreate()"  style="background-color:black ;width:300px;height:50px;color:white;font-weight: 700;font-size: 18px;margin-left: 20px;margin-top: 30px;margin-bottom: 5px;">REGISTER</button>
+                            
+        </div>
+        
+        
+    </div>
+</body>
+</html>
+<script>
+    function signup(e){
+        e.preventDefault();
+        let myform=document.getElementById("myform");
+        let email=myform.email.value;
+        let password=myform.password.value;
+    
+        
+        if(localStorage.getItem('users')===null){
+            localStorage.setItem("users",JSON.stringify([]))
+        }
+        
+    
+        
+        let user={
+            email,
+            password,
+        }
+        let array=JSON.parse(localStorage.getItem("users"))
+        array.push(user)
+        localStorage.setItem("users",JSON.stringify(array))
+    }
+    function accountcreate(){
+    let myform=document.getElementById("myform");
+    let btn=document.getElementById("btns");
+    btn.value;
+    let password=myform.password.value;
+    if(password.length>=8){
+        alert("Registration Successfull");
+        window.location.href="login.html"
+
+    }
+    
+    
+}
+
+
+    
+</script>
+
+
+
+
+

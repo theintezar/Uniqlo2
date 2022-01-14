@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 85%;
+            border: 1px solid white;
+            margin: auto;
+            
+        }
+        #main{
+            display: flex;
+
+        }
+        div>div{
+            border: 1px solid white;
+        }
+        #product{
+            flex-basis: 60%;
+            margin: 10px;
+            display:flex;
+            padding:4px;
+        }
+        #product>img{
+            width:40%;
+        }
+        #desc{
+            margin:10px;
+            font-size: 18px;
+        }
+        #prodprice{
+            flex-basis: 25%;
+            margin: 10px auto;
+            padding: 8px;
+            
+            border: 1px solid grey;
+            
+        }
+        #side{
+            margin: 10px;
+            margin-left: 850px;
+            width:25%;
+            
+
+            text-align: right;
+        }
+        #outbtn{
+            width:90%;
+            background-color: red;
+            height: 20%;
+            padding: 15px;
+            color:white;
+            font-size: 18px;
+            border: 1px solid white;
+            margin: 20px;
+        }
+        #shopbtn{
+            width:90%;
+            
+            height: 20%;
+            padding: 15px;
+            border: 1px solid black;
+            
+            font-size: 18px;
+            
+            margin: 20px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box">
+    <h1>SHOPPING CART</h1>
+    <div id="main">
+        
+        <div id="product">
+            <p>.</p>
+            <div id="desc">
+                
+                
+                
+            </div>
+
+        </div>
+        <div id="prodprice">
+            
+    
+        </div>
+       
+        
+       
+
+    </div>
+
+    
+    
+    
+    
+</div>
+<div id = "side">
+    <hr/>
+    <h4 style="text-align: left;">COUPONS</h4>
+    <hr/>
+    <p style="text-align: left;"> Your items will be reserved for the next 30 minutes after the “Checkout” button has been pressed.
+    </p>
+    <a href="pament1.html"><button id="outbtn">CHECKOUT</button></a>
+    <button id="shopbtn"><a href="HomePage.html" style="text-decoration: none; color: black;"> CONTINUE SHOPPING</a></button>
+</div>
+
+
+
+<script>
+    var productData = JSON.parse(localStorage.getItem("cart"));
+    console.log(productData.price);
+    var div0 = document.getElementById("desc")
+    var div1 = document.getElementById("product");
+    var div2 = document.getElementById("main");
+    var div3 = document.getElementById("box");
+    var div5 = document.getElementById("prodprice")
+    
+    productData.forEach(function(pr){
+        console.log(pr.image);
+        let img = document.createElement("img");
+        img.src  = pr.image;
+        let name = document.createElement("p");
+        name.textContent = pr.name;
+        let price = document.createElement("p");
+        price.textContent = pr.price;
+        let color = "Color: 09 Black";
+        let gap = document.createElement("p");
+        let divv = document.createElement("div");
+        let line = document.createElement("h3");
+        let pp =document.createElement("p");
+        let line2 = document.createElement("h3");
+        
+        
+
+        let size = "  Size:   Mens XL";
+
+        line.textContent = "ORDER SUMMARY | 1 ITEM(S)  ";
+        pp.textContent = "Item(s) subtotal :         Rs. 2490 \n";
+        line2.textContent = "ORDER TOTAL :             Rs. 2,490.00";
+        
+        div5.append(line,pp,line2);
+
+
+
+
+
+        div0.append(name,price,color,gap, size);
+
+        div1.append(img,div0);
+        div2.append(div1,div5);
+        div3.append(div2);
+
+    });
+function runProgram(input) {
+    // Write code here
+   
+  }
+  if (process.env.USERNAME === "prithvi") {
+    runProgram(``);
+  } else {
+    process.stdin.resume();
+    process.stdin.setEncoding("ascii");
+    let read = "";
+    process.stdin.on("data", function (input) {
+      read += input;
+    });
+    process.stdin.on("end", function () {
+      read = read.replace(/\n$/, "");
+      read = read.replace(/\n$/, "");
+      runProgram(read);
+    });
+    process.on("SIGINT", function () {
+      read = read.replace(/\n$/, "");
+      runProgram(read);
+      process.exit(0) ;
+    });
+  }
+    
+</script>
+    
+</body>
+</html>

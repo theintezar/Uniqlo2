@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+      input{
+         margin-top: 30px;
+         margin-left: 50px;
+      }
+
+      button{
+            width: 300px;
+            height: 70px;
+            margin-top: 80%;
+            border-radius: 50px;
+            background-color: greenyellow;
+            font-size: 20px;
+            margin-left: 50px;
+            border: 1px solid blue;
+
+        }
+    </style>
+</head>
+<body>
+   
+    <div style="width: 400px; height: 700px; background-color: aliceblue; margin: auto;">
+        <div style="width: 100%; height: 70px; background-color: greenyellow;"></div>
+       <form action="">
+        <input id="a1" style="width:300px; height:50px" type="Number" placeholder="Account Number">
+        <input id="a2" style="width:300px; height:50px" type="Number" placeholder="PIN">
+        <br>
+        
+        
+       </form>
+       <button onclick="pay()">Pay</button>
+       
+       <script>
+           function pay(){
+               var p1 = document.getElementById("a1");
+               var p2 = document.getElementById("a2");
+               var val1 = Number(p1.value);
+               var val2 = Number(p2.value);
+               var val3 = val1.toString();
+               var val4 = val2.toString();
+               if(val3.length>10 && val4.length<=4){
+                   
+              window.location.href="pamentSucces.html" 
+               }
+               else{
+               
+                alert("try again");
+               }
+            
+           }
+          
+       </script>
+       
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {box-sizing: border-box;}
+        body{
+            max-width: 100%;
+            margin: 0;
+            
+       }
+      
+        body>.imgBox{
+            max-width: 100%;
+           
+            margin:auto;
+            margin-top: 100px;
+   
+        }
+        .mySlides {
+            display:none;
+            
+        }
+         .imgBox img{
+             margin: auto;
+            }
+
+     button{
+            
+    }
+        .imgBox{
+         text-align: center;
+
+        }
+        .bottom-left {
+            position: absolute;
+            bottom: 47%;
+            left: 16px;
+          }
+
+          .top-left {
+            position: absolute;
+            bottom: 47%;
+            right: 16px;
+            
+          }
+          .b1,.b2{
+            height: 30px;
+            width: 30px;
+            background-color: rgb(245, 245, 245,0.4);
+          }
+          .b1:hover,.b2:hover{
+            background-color: rgba(128, 128, 128, 0.5);
+          }
+
+          .navbar {
+            overflow: hidden;
+            background-color: whitesmoke;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            /* max-height: 70px; */
+          
+          }
+
+          .navbar a{
+            float: left;
+            display: block;
+            color: #0a0000;
+            text-align: center;
+            padding:14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+          }
+
+          .navbar a:hover {
+            text-decoration: underline;
+            color: black;
+          }
+          a{
+            font-weight: 1000;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+           
+          }
+          .navbar>div{
+            display:inline-block;
+          }
+          .search1{
+            width: 250px;
+            height: 40px;
+           margin-bottom: 10px;
+            
+          }
+        
+          .navbar>#search2{
+            margin-left: 500px;
+            
+           
+          }
+         .navbar>.icon{
+            float: right;
+            padding: 14px 16px;
+          }
+          #content{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+
+          }
+          #content>div{
+       
+            flex-basis: 24%;
+            margin:10px auto;
+         
+          }
+          #content>div a{
+            
+           color: black;
+           margin-left: 25px;
+         
+          }
+          #content>div a:hover{
+           color: rgb(3, 237, 245);
+         
+          
+           }
+       
+          .center{
+            font-size: 20px;
+            text-align: center;
+            
+           
+          }
+          .topic{
+           margin-top: 150px;
+           margin-left: 10px;
+            
+            
+          }
+        
+          .topics2{
+            display: flex;
+            margin-top: 120px;
+            
+            
+
+          }
+          .topics2 img{
+            width: 250px;
+           
+
+          }
+          .topics2>div{
+            margin: 10px;
+           
+
+          }
+          .bigImg{
+            max-width: 100%;
+            display: flex;
+          
+            margin-top: 50px;
+            
+          }
+          .bigImg>div{
+           flex-basis: 48.7%;
+           margin: auto;
+           
+            
+          }
+
+          .bigImg img{
+            width: 100%;
+            
+          }
+
+          .smallImg img{
+            width: 100%;
+          }
+       
+        .dsblok{
+          display: grid;
+          gap: 30px;
+          grid-template-columns: 25% 73.5%;
+          
+        }
+        .dsblok img{
+          width: 100%;
+        }
+
+        #last{
+          background-color: rgb(221, 219, 220);
+         
+          display: grid;
+          gap: 10px;
+          grid-template-columns: 18% 18% 18% 18% 25%;
+          height: 500px;
+
+        }
+        #last>div:nth-child(5){
+          display: flex;
+          
+          flex-wrap: wrap;
+        }
+        #last>div:nth-child(5)>div{
+          flex-basis: 18%;
+          
+          margin: auto;
+          margin-bottom: 80%;
+         
+        }
+        #last>div:nth-child(5)>div img{
+          width: 100%;
+        }
+
+
+  
+   </style>
+</head>
+<body>
+  <div class="navbar">
+    <div>
+    <a href=""> <img src="https://1000logos.net/wp-content/uploads/2020/05/Logo-Uniqlo.jpg" style="width: 100px; margin-top: 10px;"/></a>
+    </div>
+ <div style="text-decoration:none;">
+  <a style="margin-bottom: 20px;" href="">WOMEN</a>
+   <a href="mensformal.html">MEN</a>
+   <a href="">KIDS</a>
+   <a href="">MEN</a>
+ </div>
+
+<div id="search2">
+ <a href=""><input type="text" placeholder="Search.." class="search1" /></a> 
+</div>
+
+<div class="icon">
+ <a href="signin.html"> <img src="https://th.bing.com/th/id/R.7043af0dbd9fc2c7d6cacfb54a9e338c?rik=VkJZ%2buAfIvCfBw&riu=http%3a%2f%2fcablesms.in%2fimg%2fli.png&ehk=qrvK0q2G%2b7zpPUcjNk45AIf4fIyLY39uAg90C6ZmURY%3d&risl=&pid=ImgRaw&r=0" style="width:40px;"/></a>
+  <a href=""><img src="https://png.pngtree.com/template/20191025/ourmid/pngtree-love-interface-line-vector-single-icon-image_319675.jpg" style="width:40px;"/></a>
+ <a href="unioqlo$$Cart.html"> <img src="https://cdn4.iconfinder.com/data/icons/ecommerce-bram-bram-gradak/32/ecommerce_shop_payment_online_2-47-512.png" style="width:40px;"/></a>
+</div>
+
+</div>
+    
+    <div class="imgBox">
+      
+      <img class="mySlides" src="https://im.uniqlo.com/global-cms/spa/rese8b9090038cdbcd7f1c2a11349a13245fr.jpg" style="width:100%;">
+      <img class="mySlides" src="https://im.uniqlo.com/global-cms/spa/resd4d115af1f113d66afecd36c6f3d18cafr.jpg" style="width:100%;">
+      <img class="mySlides" src="https://im.uniqlo.com/global-cms/spa/rese672d7a09c80c9a47023f4eb7dd2a056fr.jpg" style="width:100%;">
+      <img class="mySlides" src="https://im.uniqlo.com/global-cms/spa/res8daf4ddf85f73d0da1f903b06b983681fr.jpg" style="width:100%;">
+      
+      <div class="bottom-left"><button onclick="plusDivs(-1)" class="b1">&#10094;</button></div>
+      <div class="top-left"><button onclick="plusDivs(1)" class="b2">&#10095;</button></div>
+    </div>
+
+  
+  
+    
+
+    <div id="content">
+      <div class="center"><b>NEW ARRIVAL</b></div>
+      <div class="center"><b>LIMITED OFFER</b></div>
+      <div class="center"><b>SALE</b></div>
+      <div class="center"><b>COMMING SOON</b></div>
+      
+    <div>
+      <a href="">WOMEN</a>
+      <a href="">MEN</a>
+      <a href="">KID</a>
+      <a href="">BABY</a>
+    </div>
+    
+    <div>
+      <a href="">WOMEN</a>
+      <a href="">MEN</a>
+      <a href="">KID</a>
+      <a href="">BABY</a>
+    </div>
+  
+    <div>
+      <a href="">WOMEN</a>
+      <a href="">MEN</a>
+      <a href="">KID</a>
+      <a href="">BABY</a>
+    </div>
+   
+    <div>
+      <a href="">WOMEN</a>
+      <a href="">MEN</a>
+      <a href="">KID</a>
+      <a href="">BABY</a>
+    </div>
+    </div>
+ 
+    <div class="topic">
+      <h1 style="font-family: sans-serif;font-size: 40px;">TOPICS</h1>
+    </div>
+    
+
+    <div class="topics2">
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/res18a408cb9e7b901fdb8649ba890c7844fr.jpg" alt="">
+      </div>
+      <div>
+        <h2>APP EXCLUSIVE BENEFITS</h2>
+        <p>Enjoy 9 benifits of our app with welcome coupen <br> exclusive price of store pickup click here to know more </p>
+      </div>
+    </div>
+
+    <div class="topics2">
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/rescaae9585259751a2573d1b3672e90922fr.jpg" alt="">
+      </div>
+      <div>
+        <h2>EXTRA SIZE</h2>
+        <p>Enjoy 9 benifits of our app with welcome coupen <br> exclusive price of store pickup click here to know more </p>
+      </div>
+    </div>
+
+    <div style="margin-top: 120px;">
+      <h1 style="font-family: sans-serif;font-size: 40px;">FALL ESSENTIAL</h1>
+    </div>
+    
+
+    <div class="bigImg">
+      <div>
+       <img src="https://im.uniqlo.com/global-cms/spa/res44401d34dd130e86141ba2511c6de26ffr.jpg" alt="">
+      <p style="font-size: 20px; text-align: center;"><b>T-SHIRT PANTS JEANS SHIRT CAPS HOODIES</b><br>Dont miss the chance hurry up sale started on the 25 oct</p>
+      </div>
+
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/rescfc8c1d92b1a32a4c02e503e03f7b028fr.jpg" alt="">
+        <p style="font-size: 20px; text-align: center;"><b>T-SHIRT PANTS JEANS SHIRT CAPS HOODIES</b><br>Dont miss the chance hurry up sale started on the 25 oct</p>
+      </div>
+    </div>
+
+
+    <div class="bigImg">
+      <div>
+       <img src="https://im.uniqlo.com/global-cms/spa/res309b458a4edc487cf9292fc6f4951fcafr.jpg" alt="">
+      <p style="font-size: 20px; text-align: center;"><b>T-SHIRT PANTS JEANS SHIRT CAPS HOODIES</b><br>Dont miss the chance hurry up sale started on the 25 oct</p>
+      </div>
+
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/res4fc82d63c89c0f52b79740ce967ef208fr.jpg" alt="">
+        <p style="font-size: 20px; text-align: center;"><b>T-SHIRT PANTS JEANS SHIRT CAPS HOODIES</b><br>Dont miss the chance hurry up sale started on the 25 oct</p>
+      </div>
+    </div>
+
+
+
+    
+    
+    
+    
+    <div style="margin-top: 120px;">
+      <h1 style="font-family: sans-serif;font-size: 40px;">OUTWERE COLLECTION</h1>
+    </div>
+    
+
+    <div class="bigImg">
+      <div>
+       <img src="https://im.uniqlo.com/global-cms/spa/res4ec1b2ccb7f25c046bd297bd5e53cd11fr.jpg" alt="">
+      <p style="font-size: 20px; text-align: center;"><b>T-SHIRT PANTS JEANS SHIRT CAPS HOODIES</b><br>Dont miss the chance hurry up sale started on the 25 oct</p>
+      </div>
+
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/rescb2fa8984af98d2fbe4175c28b4b09b9fr.jpg" alt="">
+        <p style="font-size: 20px; text-align: center;"><b>T-SHIRT PANTS JEANS SHIRT CAPS HOODIES</b><br>Dont miss the chance hurry up sale started on the 25 oct</p>
+      </div>
+    </div>
+
+
+    <div class="bigImg">
+      <div>
+       <img src="https://im.uniqlo.com/global-cms/spa/res1ef2552bba3f91aa0e6a9f7909d2ccb5fr.jpg" alt="">
+      <p style="font-size: 20px; text-align: center;"><b>T-SHIRT PANTS JEANS SHIRT CAPS HOODIES</b><br>Dont miss the chance hurry up sale started on the 25 oct</p>
+      </div>
+
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/resfb63f11ccc662dbfd2d33aa1eafe5ec4fr.jpg" alt="">
+        <p style="font-size: 20px; text-align: center;"><b>T-SHIRT PANTS JEANS SHIRT CAPS HOODIES</b><br>Dont miss the chance hurry up sale started on the 25 oct</p>
+      </div>
+    </div>
+    
+
+
+
+
+    <div style="margin-top: 120px;">
+      <h1 style="font-family: sans-serif;font-size: 40px;">CLEAN CASUAL WORK WERE</h1>
+    </div>
+    
+
+    <div class="bigImg">
+      <div>
+       <img src="https://im.uniqlo.com/global-cms/spa/resbe05d12ad1b3fbab58b5aed9a6613443fr.jpg" alt="">
+      <p style="font-size: 20px; text-align: center;"><b>T-SHIRT PANTS JEANS SHIRT CAPS HOODIES</b><br>Dont miss the chance hurry up sale started on the 25 oct</p>
+      </div>
+
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/resd3f4699eb1382b405ff23fa507c1c94afr.jpg" alt="">
+        <p style="font-size: 20px; text-align: center;"><b>T-SHIRT PANTS JEANS SHIRT CAPS HOODIES</b><br>Dont miss the chance hurry up sale started on the 25 oct</p>
+      </div>
+    </div>
+
+
+    <div class="bigImg">
+      <div>
+       <img src="https://im.uniqlo.com/global-cms/spa/res461e2e60be0dd288d14f6ca7fba38051fr.jpg" alt="">
+      <p style="font-size: 20px; text-align: center;"><b>T-SHIRT PANTS JEANS SHIRT CAPS HOODIES</b><br>Dont miss the chance hurry up sale started on the 25 oct</p>
+      </div>
+
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/resc6bbbe115148cfbb490b0725a81f3148fr.jpg" alt="">
+        <p style="font-size: 20px; text-align: center;"><b>T-SHIRT PANTS JEANS SHIRT CAPS HOODIES</b><br>Dont miss the chance hurry up sale started on the 25 oct</p>
+      </div>
+    </div>
+
+
+
+    <div style="margin-top: 120px;">
+      <h1 style="font-family: sans-serif;font-size: 40px;">SPECIAL COLLABORATION</h1>
+    </div>
+    
+
+    <div class="bigImg">
+      <div>
+       <img src="https://im.uniqlo.com/global-cms/spa/res83dadf258fcff1e520fd943939104f34fr.jpg" alt="">
+      <p style="font-size: 20px; text-align: center;"><b>T-SHIRT PANTS JEANS SHIRT CAPS HOODIES</b><br>Dont miss the chance hurry up sale started on the 25 oct</p>
+      </div>
+
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/res613d87e52bd7a1756130feb3d7eaf599fr.jpg" alt="">
+        <p style="font-size: 20px; text-align: center;"><b>T-SHIRT PANTS JEANS SHIRT CAPS HOODIES</b><br>Dont miss the chance hurry up sale started on the 25 oct</p>
+      </div>
+    </div>
+
+
+    <div class="bigImg">
+      <div>
+       <img src="https://im.uniqlo.com/global-cms/spa/resad675a5fad5ee8e08fb93232ef98bd9dfr.jpg" alt="">
+      <p style="font-size: 20px; text-align: center;"><b>T-SHIRT PANTS JEANS SHIRT CAPS HOODIES</b><br>Dont miss the chance hurry up sale started on the 25 oct</p>
+      </div>
+
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/resa99dc01bddd89fcc8915e8df80ee9b94fr.jpg" alt="">
+        <p style="font-size: 20px; text-align: center;"><b>T-SHIRT PANTS JEANS SHIRT CAPS HOODIES</b><br>Dont miss the chance hurry up sale started on the 25 oct</p>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div style="margin-top: 120px;">
+      <h1 style="font-family: sans-serif;font-size: 40px;">UT COLLECTION</h1>
+    </div>
+    
+
+    <div class="bigImg">
+      <div>
+       <img src="https://im.uniqlo.com/global-cms/spa/res6c174813ddf26bd326d37691dafdccebfr.jpg" alt="">
+      <p style="font-size: 20px; text-align: center;"><b>T-SHIRT PANTS JEANS SHIRT CAPS HOODIES</b><br>Dont miss the chance hurry up sale started on the 25 oct</p>
+      </div>
+
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/res7fc1a23b8aa89b8ee6e6c2275ad10913fr.jpg" alt="">
+        <p style="font-size: 20px; text-align: center;"><b>T-SHIRT PANTS JEANS SHIRT CAPS HOODIES</b><br>Dont miss the chance hurry up sale started on the 25 oct</p>
+      </div>
+    </div>
+
+
+    <div class="bigImg">
+      <div>
+       <img src="https://im.uniqlo.com/global-cms/spa/resa33b390de789b60f3e5382d391f9430cfr.jpg" alt="">
+      <p style="font-size: 20px; text-align: center;"><b>T-SHIRT PANTS JEANS SHIRT CAPS HOODIES</b><br>Dont miss the chance hurry up sale started on the 25 oct</p>
+      </div>
+
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/res20351b998819a043866b15a872e3e576fr.jpg" alt="">
+        <p style="font-size: 20px; text-align: center;"><b>T-SHIRT PANTS JEANS SHIRT CAPS HOODIES</b><br>Dont miss the chance hurry up sale started on the 25 oct</p>
+      </div>
+    </div>
+
+
+    
+    <div style="margin-top: 100px; text-align: center;">
+      <a href="" style=" color: black; font-size: 20px;">SEE MORE UT COLLECTION</a>
+    </div>
+    
+
+    <div style="margin-top: 120px;">
+      <h1 style="font-family: sans-serif;font-size: 40px;">ABOUT LIFEWERE</h1>
+    </div>
+
+    <div class="smallImg" style="display: grid; grid-template-columns: 24% 24% 24% 24%; gap: 20px; justify-content: center;">
+      
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/res9e30b7185df92bba6edb71a3315e6917fr.jpg" alt="">
+        <h3 style="font-size: 25px;font-family: sans-serif;"><b>LIFE MAGAZINE</b></h3>
+        <P style="font-size: 20px;font-family: sans-serif;">Explore the specifics of LofeWear and <br>the concept its production.</P>
+      </div>
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/res1f5c67b915352a99c02a9ec013aebde6fr.jpg" alt="">
+        <h3 style="font-size: 25px;font-family: sans-serif;"><b>LIFEWERE COLLECTION</b></h3>
+        <P style="font-size: 20px;font-family: sans-serif;">Explore the specifics of LofeWear and <br>the concept its production.</P>
+      </div>
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/rese370af0c907b98bf476e4d6555b73dc8fr.jpg" alt="">
+        <h3 style="font-size: 25px;font-family: sans-serif;"><b>BEHIND THE LIFEWERE</b></h3>
+        <P style="font-size: 20px;font-family: sans-serif;">Explore the specifics of LofeWear and <br>the concept its production.</P>
+      </div>
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/res57e6cefba608b8310071c0d2fccd20aafr.jpg" alt="">
+        <h3 style="font-size: 25px;font-family: sans-serif;"><b>MASTERPIECE EVOLUTION FOR LIFE</b></h3>
+        <P style="font-size: 20px;font-family: sans-serif;">Explore the specifics of LofeWear and <br>the concept its production.</P>
+      </div>
+    </div>
+
+
+
+    <div style="margin-top: 120px;">
+      <h1 style="font-family: sans-serif;font-size: 40px;">SUSTAINABILITY</h1>
+    </div>
+
+    <div class="smallImg" style="display: grid; grid-template-columns: 24% 24% 24% 24%; gap: 20px; justify-content: center;">
+      
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/resf905175e7796f3d93fee17d63b3fe498fr.jpg" alt="">
+        <h3 style="font-size: 25px; font-family: sans-serif;"><b>SUSTAINABILITY REPORT</b></h3>
+        <P style="font-size: 20px; font-family: sans-serif;">Explore the specifics of LofeWear and <br>the concept its production.</P>
+      </div>
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/res3209e49a29eac6960034b6c09e336856fr.jpg" alt="">
+        <h3 style="font-size: 25px; font-family: sans-serif;"><b>THE POWER OF CLOTHING</b></h3>
+        <P style="font-size: 20px; font-family: sans-serif;">Explore the specifics of LofeWear and <br>the concept its production.</P>
+      </div>
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/resf45f51e998eff5a8314d7cf5755e2824fr.jpg" alt="">
+        <h3 style="font-size: 25px; font-family: sans-serif;"><b>BEHIND THE LIFEWERE</b></h3>
+        <P style="font-size: 20px; font-family: sans-serif;">Explore the specifics of LofeWear and <br>the concept its production.</P>
+      </div>
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/res024dab3c544a263a83577ff144db3b8ffr.jpg" alt="">
+        <h3 style="font-size: 25px; font-family: sans-serif;"><b>BLUE CYCLE JEANS</b></h3>
+        <P style="font-size: 20px; font-family: sans-serif;">Explore the specifics of LofeWear and <br>the concept its production.</P>
+      </div>
+    </div>
+
+
+    <div style="margin-top: 120px;">
+      <h1 style="font-family: sans-serif;font-size: 40px;">SUSTAINABILITY</h1>
+    </div>
+
+    <div class="dsblok">
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/res8dfd88067e414cd0d802b2b5d1f49893fr.jpg" alt="">
+      </div>
+      <div>
+        <h2 style="font-family: sans-serif;"><b>DIFFERENT TYPES OF LOUNGEWERE</b></h2>
+        <P style="font-family: sans-serif; font-size: 20px;">Loungewere is casual attire that makes you feel highly comfortable while keeping an appropriate look. Read the article to know about the types of Loungewere and how to style each one of them.</P>
+      </div>
+    </div>
+
+    <hr style="margin-top: 15px; margin-bottom: 15px;">
+
+    <div class="dsblok">
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/res445910ad1bd6951eb00115f9ad786f8cfr.jpg" alt="">
+      </div>
+      <div>
+        <h2 style="font-family: sans-serif;"><b>WFH IN BUSINESS-READY ROPS</b></h2>
+        <P style="font-family: sans-serif; font-size: 20px;">work looks with all day comfort.</P>
+      </div>
+    </div>
+
+    <hr style="margin-top: 15px; margin-bottom: 15px;">
+
+    <div class="dsblok">
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/res8015f9a2153a901249d932ed9dd56ea1fr.jpg" alt="">
+      </div>
+      <div>
+        <h2 style="font-family: sans-serif;"><b>A GUIDE FOR A PREFECT T-SHIRT AND JEANS COMBINATION</b></h2>
+        <P style="font-family: sans-serif; font-size: 20px;">Loungewere is casual attire that makes you feel highly comfortable while keeping an appropriate look. Read the article to know about the types of Loungewere and how to style each one of them.</P>
+      </div>
+    </div>
+
+    <div style="margin-top: 100px; text-align: center;">
+      <a href="" style=" color: black; font-size: 20px;">SEE MORE ARTICLES</a>
+    </div>
+
+    <div style="margin-top: 120px;">
+      <h1 style="font-family: sans-serif;font-size: 40px;">SHOPPING MADE EASY</h1>
+    </div>
+
+    <div class="dsblok">
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/resaf72caad6803ab7aebb7c4fe61e40fdcfr.jpg" alt="">
+      </div>
+      <div>
+        <h2 style="font-family: sans-serif;"><b>GUIDE FOR FIRST-TIME SHOPPERS</b></h2>
+        <P style="font-family: sans-serif; font-size: 20px;">It's easy to order from your home. The world's largest section of products at your fingertips.</P>
+        <h2 style="font-family: sans-serif; margin-top: 20PX;"><u>READ MORE</u></h2>
+      </div>
+    </div>
+
+    <hr style="margin-top: 15px; margin-bottom: 15px;">
+
+    <div class="dsblok">
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/resb02450923a4a8b7dd038ea598e44ff3bfr.jpg" alt="">
+      </div>
+      <div>
+        <h2 style="font-family: sans-serif;"><b>UNIQLO APP</b></h2>
+        <P style="font-family: sans-serif; font-size: 20px;">The largest UNIQLO store now your hands when you download UNIQLO App.</P>
+      </div>
+    </div>
+
+    <hr style="margin-top: 15px; margin-bottom: 15px;">
+
+    <div class="dsblok">
+      <div>
+        <img src="https://im.uniqlo.com/global-cms/spa/res335b975510088cdbc0d24bc96605e274fr.jpg" alt="">
+      </div>
+      <div>
+        <h2 style="font-family: sans-serif;"><b>CLICK & COLLECT</b></h2>
+        <P style="font-family: sans-serif; font-size: 20px;">A new and exciting shopping experience from your mobile phone to the most convenient store nearest you.</P>
+      </div>
+    </div>
+
+    <div style="margin-top: 100px; text-align: center;">
+      <a href="" style=" color: black; font-size: 20px;">SEE MORE UT COLLECTION</a>
+    </div>
+
+
+
+    <div style="margin-top: 120px;">
+      <h1 style="font-family: sans-serif;font-size: 40px;">INFORMATION</h1>
+    </div>
+    
+
+    <div class="bigImg">
+      <div>
+        <a style="text-decoration:none; color:black;font-weight: 10;" href="" >
+          <p>Return policy</p>
+          <p style="margin-top: 30px;">Store Locator</p>
+        </a>
+
+     </div>
+
+     <div>
+      <a style="text-decoration:none; color:black; font-weight: 10" href="" >
+        <p>Sustainability</p>
+        <p style="margin-top: 30px;">Subscribe to E-Newsletter</p>
+      </a>
+
+   </div>
+    </div>
+
+    <div id="last" style="margin-top: 150px;">
+      <div style="margin-top: 60px; margin-left: 20px;">
+        <h2>About Uniqlo</h2>
+        <p>Information</p>
+        <p>Store Locator</p>
+      </div>
+      <div style="margin-top: 60px;">
+        <h2>Help</h2>
+        <p>FAQ</p>
+        <p>Return policy</p>
+        <p>Orivacy Policy</p>
+        <p>Accessibility</p>
+      </div>
+      <div style="margin-top: 60px;">
+      <h2>Account</h2>
+      <p>Membership</p>
+      <p>Profile</p>
+      <p>coupopns</p>
+      </div>
+      <div style="margin-top: 60px;">
+      <h2>E-Newsletter</h2>
+      <p>Sign up and be the first-in- <br> the know about new arrivals,<br> promotion,in-store events and <br> more. </p>
+      <h3><u> SUBSCRIBE NOW</u></h3>
+      </div>
+      <div style="margin-top: 60px; ">
+        
+      <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Facebook_logo_36x36.svg/1200px-Facebook_logo_36x36.svg.png" alt=""></div>
+      <div><img src="https://th.bing.com/th?q=Neon+Twitter+Logo&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.5&pid=InlineBlock&mkt=en-IN&adlt=moderate&t=1&mw=247" alt=""></div>
+      <div><img src="https://th.bing.com/th?q=Instagram+Photoshop&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.5&pid=InlineBlock&mkt=en-IN&adlt=moderate&t=1&mw=247" alt=""></div>
+      <div> <img src="https://th.bing.com/th?q=YouTube+and+Video&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.5&pid=InlineBlock&mkt=en-IN&adlt=moderate&t=1&mw=247" alt=""></div>
+      </div>
+
+      <h2 style="margin-top: 1%; margin-left: 20px;">ENGLISH</h2>
+    </div>
+
+
+    
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+    
+    </body>
+    </html>
+
+
+   

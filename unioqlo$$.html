@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            margin:auto;
+            width:90%;
+            border: 1px solid white;
+            display: flex;
+        }
+        div>div{
+            border: 1px solid white;
+        }
+        #shortimages{
+            height: 30%;
+            flex-basis: 20%;
+            display: grid;
+            grid-template-columns: 40% 40%;
+            gap:10px;
+            margin:5px;
+            padding:5px;
+        }
+        #productimage{
+            flex-basis: 50%;
+            margin: 5px;
+        }#cartbutton{
+            flex-basis: 30%;
+
+        }
+        img{
+            width:100%;
+        }
+        #cartbutton{
+            margin:5px 30px;
+        }
+        #imgg{
+            height: 50px;
+            display:grid;
+            grid-template-columns: 20% 20% 20%;
+            grid-template-rows: 100%;
+            gap:5px;
+        }
+        #sizesel>button{
+            margin: 5px;
+            width:60px;
+
+
+        }
+        #addtocart>button{
+            width:100%;
+            background-color: red;
+            height:50px;
+            color: white;
+            font-size: 20px;
+            margin:10px 0;
+            border: 1px solid white;
+
+        }
+        #wishlist>button{
+            width:46%;
+            
+            height:50px;
+            
+            font-size: 12px;
+            margin:10px 5px;
+           
+
+        }
+        #description{
+            width:40%;
+            margin:50px 100px;
+            
+        }
+        #description>button{
+            width:90%;
+            background-color: white;
+            border: 1px solid white;
+            text-align: left;
+
+        }
+
+
+        .navbar {
+            overflow: hidden;
+            background-color: whitesmoke;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            /* max-height: 70px; */
+          
+          }
+
+          .navbar a{
+            float: left;
+            display: block;
+            color: #0a0000;
+            text-align: center;
+            padding:14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+          }
+
+          .navbar a:hover {
+            text-decoration: underline;
+            color: black;
+          }
+          a{
+            font-weight: 1000;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+           
+          }
+          .navbar>div{
+            display:inline-block;
+          }
+          .search1{
+            width: 250px;
+            height: 40px;
+           margin-bottom: 10px;
+            
+          }
+        
+          .navbar>#search2{
+            margin-left: 500px;
+            
+           
+          }
+         .navbar>.icon{
+            float: right;
+            padding: 14px 16px;
+          }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>
+        <a href=""> <img src="https://1000logos.net/wp-content/uploads/2020/05/Logo-Uniqlo.jpg" style="width: 100px; margin-top: 10px;"/></a>
+        </div>
+     <div style="text-decoration:none;">
+      <a style="margin-bottom: 20px;" href="">WOMEN</a>
+       <a href="mensformal.html">MEN</a>
+       <a href="">KIDS</a>
+       <a href="">MEN</a>
+     </div>
+    
+    <div id="search2">
+     <a href=""><input type="text" placeholder="Search.." class="search1" /></a> 
+    </div>
+    
+    <div class="icon">
+     <a href="signin.html"> <img src="https://th.bing.com/th/id/R.7043af0dbd9fc2c7d6cacfb54a9e338c?rik=VkJZ%2buAfIvCfBw&riu=http%3a%2f%2fcablesms.in%2fimg%2fli.png&ehk=qrvK0q2G%2b7zpPUcjNk45AIf4fIyLY39uAg90C6ZmURY%3d&risl=&pid=ImgRaw&r=0" style="width:40px;"/></a>
+      <a href=""><img src="https://png.pngtree.com/template/20191025/ourmid/pngtree-love-interface-line-vector-single-icon-image_319675.jpg" style="width:40px;"/></a>
+     <a href="unioqlo$$Cart.html"> <img src="https://cdn4.iconfinder.com/data/icons/ecommerce-bram-bram-gradak/32/ecommerce_shop_payment_online_2-47-512.png" style="width:40px;"/></a>
+    </div>
+    
+    </div>
+
+
+
+
+
+    <hr/>
+    <div id="box" style="margin-top: 100px;">
+        <div id="shortimages">
+            <div>
+                <img src = "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/427170/item/goods_09_427170.jpg?width=160&impolicy=quality_75"/>
+            </div>
+            <div>
+                <img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/427170/sub/goods_427170_sub18.jpg?width=160&impolicy=quality_75" id="collar"/>
+            </div>
+            <div>
+                <img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/427170/sub/goods_427170_sub19.jpg?width=160&impolicy=quality_75" id="shb2"/>
+            </div>
+            <div>
+                <img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/427170/sub/goods_427170_sub20.jpg?width=160&impolicy=quality_75" id="shb3"/>
+            </div>
+            <div>
+                <img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/427170/sub/goods_427170_sub21.jpg?width=160&impolicy=quality_75" id="shb4"/>
+            </div>
+            <div>
+                <img src ="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/427170/sub/goods_427170_sub22.jpg?width=160&impolicy=quality_75" id="shb5"/>
+            </div>
+
+
+
+        </div>
+     <div id="productimage">
+         <div>
+             <img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/427170/item/goods_09_427170.jpg?width=1600&impolicy=quality_75" id="bigimg"/>
+
+         </div>
+
+
+     </div>
+     <div id="cartbutton">
+         <div>
+             <h1 id="name">MEN Super Non Iron Slim Fit Long Sleeve Shirt(Semi Wide Collar)
+                </h1>
+                <h2 id="price">MRP
+                    Rs.
+                    2,490.00</h2>
+                <p>inclusive of all taxes</p>
+                <p>You don't need to iron it even though it is made completely of cotton. A clean, trim-fitting shirt for ultimate care</p>
+         
+            </div>
+            <hr/>
+            <div id="colorimg">
+                <h5 id="color">Color: 09 Black</h5>
+                <div id="imgg">
+                    <button id="whitecol" style="background-color: #EEEEEE;"> </button>
+                    <button id="blackcol" style="background-color: black;"></button>
+                    <button  id ="bluecol" style="background-color: #B3E5FC;"></button>
+                </div>
+            </div>
+            <div id="size">
+                <h5>Size: M </h5>
+                <div id="sizesel">
+                    <button style=" border: 1px solid grey; height:30px;">S</button>
+                    <button style=" border: 1px solid grey; height:30px;">M</button>
+                    <button style=" border: 1px solid grey; height:30px;">L</button>
+                    <button style=" border: 1px solid grey; height:30px;">XL</button>
+
+                    
+                </div>
+                <div id="quantity">
+                    <h4>Quantity</h4>
+                    <select style="width: 150px;padding: 10px;">
+                        
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </div>
+
+            </div>
+            <div id="addtocart">
+                <button id="crtbtn">ADD TO CART</button>
+            </div>
+            <div id="wishlist">
+                <button>ADD TO WISHLIST</button>
+                <button>FIND STOCK IN STORE</button>
+            </div>
+            <hr/>
+
+     </div>
+     
+    </div>
+    <div id="description">
+        <h3>DESCRIPTION</h3>
+        <hr/>
+        
+        <button id="overview">Overview </button>
+        <div id="overviewdiv"></div>
+        <hr/>
+        <button id="material">Materials</button>
+        <div id="overviewdiv2"></div>
+        <hr/>
+
+        </div>
+    
+    
+</body>
+
+<script>
+    var btnover= document.getElementById("overview");
+    btnover.addEventListener("click", divgen);
+    var count = 0;
+    var material = document.getElementById("material");
+    material.addEventListener("click", divgen2 )
+    
+    function divgen(){
+        
+        count++;
+        let parent = document.getElementById("overviewdiv")
+        let div = document.createElement("div")
+        let p1 = document.createElement("p");
+        let p3 = document.createElement("p");
+        let p2 = document.createElement("p");
+        let h2 = document.createElement("h3");
+        p1.textContent = "- 100% cotton with a comfortable feel"
+           p2.textContent="- Added non-iron processing."
+           h2.textContent = "NET QUANTITY -> 1N";
+           p3.textContent = " ";
+                                         
+           console.log(count);
+
+           
+         if(count == 1){   
+        div.append(p1,p2,h2);
+        parent.append(div);
+         }  
+         
+         
+       
+
+         
+    }
+    var count1 = 0;
+    function divgen2(){
+        
+        count1++;
+        let parent = document.getElementById("overviewdiv2")
+        let div = document.createElement("div")
+        let p1 = document.createElement("p");
+        let p3 = document.createElement("p");
+        let p2 = document.createElement("p");
+        let h2 = document.createElement("h3");
+        p1.textContent = "- 100% cotton with a comfortable feel"
+           p2.textContent="- Added non-iron processing."
+           h2.textContent = "NET QUANTITY -> 1N";
+           p3.textContent = " ";
+                                         
+           console.log(count1);
+
+           
+         if(count1 == 1){   
+        div.append(p1,p2,h2);
+        parent.append(div);
+         }  
+         
+         
+       
+
+         
+    }
+    var imggg = document.getElementById("bigimg")
+    var btnwhite = document.getElementById("whitecol");
+    
+    
+    btnwhite.addEventListener("click", changewhite);
+    var btnblack = document.getElementById("blackcol");
+    btnblack.addEventListener("click", changeblack);
+    var btnblue = document.getElementById("bluecol");
+    btnblue.addEventListener("click", changeblue);
+    var collarbtn = document.getElementById("collar");
+    collarbtn.addEventListener("click" , changecollar);
+    var sbh2 = document.getElementById("shb2");
+    shb2.addEventListener("click", change2);
+    var sbh3 = document.getElementById("shb3");
+    shb3.addEventListener("click", change3);
+    var sbh4 = document.getElementById("shb4");
+    shb4.addEventListener("click", change4);
+    var sbh5 = document.getElementById("shb5");
+    shb5.addEventListener("click", change5);
+    var color = document.getElementById("color")
+
+    function changewhite(){
+        color.textContent = "Color: 52 White"
+        
+        imggg.src = "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/427170/item/goods_00_427170.jpg?width=1600&impolicy=quality_75";
+
+    }
+
+    function changeblack(){
+        color.textContent = "Color: 09 Black"
+        imggg.src = "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/427170/item/goods_09_427170.jpg?width=1600&impolicy=quality_75";
+    }
+
+    function changeblue(){
+        color.textContent = "Color: 778 Blue"
+        imggg.src = "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/427170/item/goods_60_427170.jpg?width=1600&impolicy=quality_75";
+    }
+    function changecollar(){
+        imggg.src = "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/427170/sub/goods_427170_sub18.jpg?width=1600&impolicy=quality_75";
+    }
+    function change2(){
+        imggg.src = "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/427170/sub/goods_427170_sub19.jpg?width=1600&impolicy=quality_75";
+    }
+    function change3(){
+        imggg.src = "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/427170/sub/goods_427170_sub20.jpg?width=1600&impolicy=quality_75";
+    }
+    function change4(){
+        imggg.src = "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/427170/sub/goods_427170_sub21.jpg?width=1600&impolicy=quality_75";
+    }
+    function change5(){
+        imggg.src = "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/427170/sub/goods_427170_sub22.jpg?width=1600&impolicy=quality_75";
+    }
+
+    var cartbtn = document.getElementById("crtbtn");
+    cartbtn.addEventListener("click" , cartAdd());
+
+    function cartAdd(prod){
+        var name = document.getElementById("name").textContent;
+        var price = document.getElementById("price").textContent;
+        var image = document.getElementById("bigimg").src;
+
+        var data = 
+            {
+                name: name,
+                price: price,
+
+                image: image
+            }
+        
+
+        localStorage.setItem("cart", JSON.stringify([]));
+        var arr = JSON.parse(localStorage.getItem("cart"));
+        arr.push(data);
+        localStorage.setItem("cart", JSON.stringify(arr));
+    }
+
+
+    
+   
+    
+    
+</script>
+</html>
